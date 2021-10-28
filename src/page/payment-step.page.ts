@@ -6,14 +6,14 @@ export class PaymentStepPage {
   private submitButton: ElementFinder
 
   constructor () {
-    this.emailInput = $('.login_form #email')
-    this.passwdInput = $('.login_form #passwd')
-    this.submitButton = $('.login_form #SubmitLogin')
+    this.emailInput = $('#email')
+    this.passwdInput = $('#passwd')
+    this.submitButton = $('#SubmitLogin')
   }
 
-  public async fillLoginForm (): Promise<void> {
-    await this.emailInput.sendKeys('aperdomobo@gmail.com')
-    await this.passwdInput.sendKeys('WorkshopProtractor')
+  public async fillLoginForm (email, passwd): Promise<void> {
+    await this.emailInput.sendKeys(email)
+    await this.passwdInput.sendKeys(passwd)
     await this.submitButton.click()
   }
 }
