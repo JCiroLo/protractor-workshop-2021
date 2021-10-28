@@ -33,7 +33,10 @@ describe('Buy a t-shirt', () => {
 describe('Login to aplication', () => {
   const paymentStepPage: PaymentStepPage = new PaymentStepPage()
   it('then should be loged into the app', async () => {
-    await paymentStepPage.fillLoginForm()
+    await paymentStepPage.fillLoginForm(
+      'aperdomobo@gmail.com',
+      'WorkshopProtractor'
+    )
   })
 })
 

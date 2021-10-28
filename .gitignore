@@ -161,3 +161,6 @@ dist
 
 # Typescript
 dist
+
+# Jasmine Awesome Reports
+awesome-report

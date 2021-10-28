@@ -5,8 +5,8 @@ export class ProductListPage {
   private submitButton: ElementFinder
 
   constructor () {
-    this.checkBox = $('#form > #cgv')
-    this.submitButton = $('#form > .cart_navigation clearfix > .standard-checkout')
+    this.checkBox = $('#cgv')
+    this.submitButton = $('#form > p > button')
   }
 
   public async proceedToCheckout (): Promise<void> {

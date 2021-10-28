@@ -5,7 +5,7 @@ export class AddressStepPage {
 
   constructor () {
     this.tShirtMenu = $(
-      '#center_column > .product_list > li:nth-child(1) > a.button.ajax_add_to_cart_button.btn.btn-default'
+      '#center_column a.button.ajax_add_to_cart_button.btn.btn-default'
     )
   }
 
